@@ -58,7 +58,9 @@ int main() {
     }else{
       cout<<"You do nothing. That may not be very wise of you.\n";
     }
+    if(enemy.GetLifePoints()>0){
       cout<<enemy.GetName()<<" attacks with "<<enemyWeapon.GetName()<< '\n';
       player.Hurt(enemyWeapon.GetDamage());
+    }
   } while((choice<1||choice>2)||(enemy.GetLifePoints()!=0 && player.GetLifePoints()!=0));
 }
