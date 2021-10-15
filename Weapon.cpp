@@ -14,11 +14,11 @@ Weapon::~Weapon(){}
 
 //METHODS
 WeaponType Weapon::GetWeaponType(){
-
+  return mType;
 }
 int Weapon::GetRange(){
-
+  return mAttackRange;
 }
 int Weapon::GetDamage(){
-
+  return mAttackDamage;
 }
